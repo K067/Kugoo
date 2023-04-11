@@ -1,4 +1,5 @@
 @import url(normalize.css);
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 body {
@@ -16,18 +17,39 @@ body {
 }
 
 html {
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.container {
+.container-native {
     position: relative;
-    max-width: 1110px;
+    max-width: 1580px;
     margin: auto;
 }
 
+.form-control {
+    border-radius: 7px;
+    border: 1.5px solid #E3E6ED;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border: 1.5px solid #E3E6ED;
+    background-color: #F7F8FD;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #5878FF !important;
+    border-radius: 7px;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
 .nav-service-list {
-    margin-top: 13px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     gap: 30px;
 }
@@ -38,18 +60,21 @@ html {
     text-decoration: none;
     color: #282739;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .social-list {
     display: flex;
-    gap: 8.5px;
+    gap: 15px;
 }
 
 .social-item-link {
     text-decoration: none;
 }
 
+.search-menu {
+    display: flex;
+}
 
 .nav-separator {
     width: 100%;
@@ -58,16 +83,79 @@ html {
 }
 
 .service-list-item {
-    font-size: 12px;
+    font-size: 14px;
     color: #5d6c7b;
 }
 
-@media (max-width:1920px) {
+.icon {
+    width: 130%;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.span-text {
+    font-size: 30px;
+    color: #282739;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-right: 35px;
+}
+
+.button {
+    background: #6F73EE;
+    font-size: 16px;
+    color: white;
+    padding: 15px 25px;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.catalog-button {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    padding: 8px 0;
+    padding-left: 15px;
+    padding-right: 18px;
+}
+
+.catalog-button:before {
+    content: '';
+    background-image: url('/img/icon/threelines.svg');
+    width: 12.8px;
+    height: 12px;
+    margin-right: 13px;
+}
+
+@media(max-width:1700px) {
+    .container-native {
+        max-width: 1360px;
+    }
+}
+
+@media (max-width:1440px) {
     html {
-        font-size: 16px;
+        font-size: 12px;
     }
 
-    .container {
-        max-width: 1580px;
+    .container-native {
+        max-width: 1110px;
+    }
+
+    .service-list-item,
+    .nav-phone {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .social-list {
+        gap: 8.5px;
     }
 }
