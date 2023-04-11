@@ -1,15 +1,11 @@
 @import url(normalize.css);
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url(bootstrap.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 body {
     font-family: 'Jost', sans-serif;
     overflow-x: hidden;
-}
-
-.img {
-    height: 100%;
-    width: 100%
 }
 
 * {
@@ -48,8 +44,8 @@ input.form-control:focus {
 }
 
 .nav-service-list {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 12px;
     display: flex;
     gap: 30px;
 }
@@ -61,6 +57,7 @@ input.form-control:focus {
     color: #282739;
     font-weight: 700;
     font-size: 14px;
+    letter-spacing: -0.4px;
 }
 
 .social-list {
@@ -96,16 +93,26 @@ input.form-control:focus {
 }
 
 .span-text {
-    font-size: 30px;
+    font-size: 32px;
     color: #282739;
-    letter-spacing: 2px;
     font-weight: 700;
     margin-right: 35px;
 }
 
-.button {
-    background: #6F73EE;
+.btn {
+    padding: 0.375rem 11px !important;
+}
+
+.label-native {
+    position: absolute;
+    color: #5d6c7b;
     font-size: 16px;
+    margin: 12px 20px;
+}
+
+.button-native {
+    background: #6F73EE;
+    font-size: 18px;
     color: white;
     padding: 15px 25px;
     border: 0;
@@ -119,8 +126,45 @@ input.form-control:focus {
     margin-right: 20px;
     align-items: center;
     padding: 8px 0;
+    letter-spacing: 0.5px;
     padding-left: 15px;
     padding-right: 18px;
+}
+
+.side-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 47px;
+}
+
+.header-icon {
+    color: #282739;
+}
+
+.header-icon:nth-child(3) {
+    display: flex;
+    font-size: 16px;
+    text-shadow: 1px 0 #282739;
+    align-items: center;
+}
+
+.input-group {
+    max-width: 603px !important;
+    margin-bottom: 0 !important;
+}
+
+.form-control {
+    height: 40px !important;
+    border: 2px solid #6f73ee;
+}
+
+.header-icon:nth-child(3)::before {
+    content: '';
+    margin-right: 10px;
+    background-image: url('/img/icon/shopping-cart.svg');
+    width: 20px;
+    height: 20px;
 }
 
 .catalog-button:before {
@@ -133,29 +177,104 @@ input.form-control:focus {
 
 @media(max-width:1700px) {
     .container-native {
-        max-width: 1360px;
+        max-width: 80%;
+    }
+
+
+    @media (max-width:1440px) {
+        html {
+            font-size: 12px;
+        }
+
+        .container-native {
+            max-width: 77%;
+        }
+
+        .service-list-item,
+        .nav-phone {
+            font-size: 12px;
+        }
+
+        .header-icon:nth-child(3) {
+            font-size: 14px;
+        }
+
+        .button-native {
+            font-size: 16px;
+        }
+
+        .span-text {
+            font-size: 30px;
+        }
+
+        .label-native {
+            font-size: 14px;
+        }
+
+        .icon {
+            width: 100%;
+        }
+
+        .social-list {
+            gap: 8.5px;
+        }
+
+        /* @media(max-width:1200px) {
+
+        } */
     }
 }
 
-@media (max-width:1440px) {
+@media(max-width:992px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .container-native {
-        max-width: 1110px;
+        max-width: 77%;
     }
 
     .service-list-item,
     .nav-phone {
+        font-size: 10px;
+    }
+
+    .header-icon:nth-child(3) {
         font-size: 12px;
     }
 
-    .icon {
-        width: 100%;
+    .button-native {
+        font-size: 14px;
     }
 
-    .social-list {
-        gap: 8.5px;
+    .span-text {
+        font-size: 28px;
+    }
+
+    .label-native {
+        font-size: 12px;
+        margin: 13px 20px;
+    }
+
+    @media(max-width:871px) {
+        .span-text {
+            display: none;
+        }
+
+        @media(max-width:768px) {
+
+            .side-menu,
+            .navbar-native,
+            .nav-separator {
+                display: none;
+            }
+
+            @media(max-width:576px) {
+                .container-native {
+                    max-width: 576px;
+                }
+
+            }
+        }
     }
 }
