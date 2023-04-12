@@ -37,7 +37,6 @@ html {
 
 .model-link {
     max-width: 460px;
-    max-height: 36px;
 }
 
 .adress {
@@ -542,6 +541,51 @@ input.form-control:focus {
                     max-width: 90%;
                 }
 
+                .hc-wrapper {
+                    margin-left: 36px !important;
+                }
+
+                .model-link {
+                    max-width: 465px;
+                }
+
+                .td-header-content {
+                    margin-bottom: 20px;
+                }
+
+                .title {
+                    font-size: 23px;
+                    line-height: 41px;
+                }
+
+                .text {
+                    font-size: 14px;
+                }
+
+                .item {
+                    font-size: 9px;
+                }
+
+                .button-native {
+                    font-size: 12px;
+                }
+
+                .model-link {
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+
+                .ml-image {
+                    width: 30px;
+                }
+
+                .model-link-item {
+                    font-size: 12px;
+                }
+
+                .model-link-wrapper {
+                    gap: 10px;
+                }
             }
 
             @media(max-width:340px) {
