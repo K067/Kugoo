@@ -35,6 +35,11 @@ html {
     color: #FFFFFF;
 }
 
+.model-link {
+    max-width: 460px;
+    max-height: 36px;
+}
+
 .adress {
     font-weight: 500;
 }
@@ -47,19 +52,37 @@ html {
 .test-drive-header {
     display: flex;
     margin-top: 41px;
-    width: 1380px;
-    height: 445px;
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: 1380px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-button {
+    background: white !important;
+    color: #6f73ee !important;
+    padding: 19px 40.5px !important;
 }
 
 .hc-wrapper {
     margin-top: 56px !important;
     margin-bottom: 56px !important;
+    margin-left: 136px !important;
+}
+
+.td-header-title {
+    max-width: 650px;
+    letter-spacing: -0.7px;
 }
 
 .td-header-content {
     margin-bottom: 30px;
+}
+
+.model-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .info {
@@ -127,6 +150,13 @@ html {
     font-size: 22px;
     line-height: 29px;
 }
+
+.info-item {
+    display: flex;
+    gap: 8px;
+    margin-right: 10px;
+}
+
 
 .td-header-title,
 .td-header-text {
@@ -297,14 +327,25 @@ input.form-control:focus {
         max-width: 80%;
     }
 
-
     @media (max-width:1440px) {
         html {
             font-size: 12px;
         }
 
+        .test-drive-header {
+            width: 96%;
+        }
+
         .container-native {
             max-width: 77%;
+        }
+
+        .td-header-title {
+            max-width: 612px;
+        }
+
+        .model-link {
+            max-width: 438px;
         }
 
         .adress,
@@ -369,6 +410,23 @@ input.form-control:focus {
         display: none;
     }
 
+    .title {
+        font-size: 33px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .model-link-item {
+        font-size: 12px;
+    }
+
+    .day-time,
+    .adress {
+        font-size: 10px;
+    }
+
     .con-alt {
         margin: auto;
     }
@@ -377,6 +435,18 @@ input.form-control:focus {
         display: flex !important;
         justify-content: flex-end;
         margin-bottom: 10px;
+    }
+
+    .header-image-native {
+        background-image: unset;
+    }
+
+    .model-link {
+        max-width: 620px;
+    }
+
+    .header-image-native::before {
+        background: #6F73EF;
     }
 
     .menu-icon {
@@ -459,7 +529,11 @@ input.form-control:focus {
         margin: 13px 20px;
     }
 
-    @media(max-width:871px) {
+    @media(max-width:871.98px) {
+
+        .hc-wrapper {
+            margin-left: 56px !important;
+        }
 
         @media(max-width:768px) {
 
