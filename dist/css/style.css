@@ -36,7 +36,7 @@ html {
 }
 
 .crutch-bold {
-    margin-right: 2px;
+    margin-right: -6px;
 }
 
 .advantage-list {
@@ -45,6 +45,12 @@ html {
 
 .advantage-list-item {
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .model-link {
@@ -111,14 +117,6 @@ html {
     font-weight: 500 !important;
 }
 
-.advantage-list-item::before {
-    display: flex;
-    content: '';
-    background-image: url('/img/icon/CheckCircle.svg');
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-}
 
 .title {
     letter-spacing: -0.7px;
@@ -128,7 +126,7 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    width: 515px;
+    max-width: 515px;
     height: auto;
     object-fit: cover;
 }
@@ -440,7 +438,7 @@ input.form-control:focus {
         }
 
         .advantage-content {
-            width: 61%;
+            width: 62%;
         }
 
         .test-drive-header {
@@ -525,8 +523,28 @@ input.form-control:focus {
         font-size: 33px;
     }
 
+    .scooter-image {
+        display: block;
+        position: relative;
+        width: 80%;
+        right: -175px;
+        left: 175px;
+    }
+
+    .advantage-content {
+        width: 100%;
+    }
+
+    .advantage-wrapper {
+        justify-content: center;
+    }
+
     .text {
         font-size: 18px;
+    }
+
+    .advantage-list-item {
+        font-size: 16px;
     }
 
     .model-link-item {
@@ -646,7 +664,17 @@ input.form-control:focus {
             margin-left: 56px !important;
         }
 
+        .scooter-image {
+            right: -125px;
+            left: -125px;
+        }
+
         @media(max-width:768px) {
+
+            .scooter-image {
+                right: -90px;
+                left: 90px;
+            }
 
             @media(max-width:576px) {
                 .container-native {
@@ -657,6 +685,11 @@ input.form-control:focus {
                     margin-left: 36px !important;
                 }
 
+                .scooter-image {
+                    right: -60px;
+                    left: 60px;
+                }
+
                 .model-link {
                     max-width: 465px;
                 }
@@ -665,10 +698,25 @@ input.form-control:focus {
                     margin-bottom: 20px;
                 }
 
+                .advantage-list-item {
+                    font-size: 12px;
+                }
+
                 .title {
                     font-size: 23px;
                     line-height: 41px;
                 }
+
+                .advantage-content {
+                    width: 90%;
+                }
+
+                .advantage-title {
+                    font-size: 20px;
+                    line-height: 36px;
+                    margin-bottom: 10px;
+                }
+
 
                 .text {
                     font-size: 14px;
@@ -700,9 +748,21 @@ input.form-control:focus {
                 }
             }
 
+            @media(max-width:486px) {
+                .scooter-image {
+                    right: -38px;
+                    left: 38px;
+                }
+            }
+
             @media(max-width:340px) {
                 .label-native {
                     margin: 14px 4px !important;
+                }
+
+                .scooter-image {
+                    right: -34px;
+                    left: 34px;
                 }
             }
         }
