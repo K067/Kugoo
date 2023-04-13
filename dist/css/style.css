@@ -83,8 +83,21 @@ html {
     justify-content: flex-start;
 }
 
-.advantage {
+.second-image {
+    right: unset;
+    left: 30px;
+}
+
+.second-wrapper {
+    justify-content: flex-end;
+}
+
+.relative {
     position: relative;
+}
+
+.relative:nth-child(2) {
+    margin-top: 125px;
 }
 
 .advantage-content {
@@ -104,7 +117,7 @@ html {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 14px;
 }
 
 .advantage-list-item {
@@ -120,6 +133,10 @@ html {
 
 .title {
     letter-spacing: -0.7px;
+}
+
+.at-alt {
+    letter-spacing: -0.4px;
 }
 
 .scooter-image {
@@ -449,6 +466,10 @@ input.form-control:focus {
             max-width: 77%;
         }
 
+        .con-ad-alt {
+            max-width: 78%;
+        }
+
         .td-header-title {
             max-width: 612px;
         }
@@ -517,6 +538,14 @@ input.form-control:focus {
 
     .span-text {
         display: none;
+    }
+
+    .advantage {
+        margin-top: 50px;
+    }
+
+    .relative:nth-child(2) {
+        margin-top: 35px;
     }
 
     .title {
@@ -681,6 +710,18 @@ input.form-control:focus {
                     max-width: 90%;
                 }
 
+                .advantage-list-item {
+                    gap: 5px;
+                }
+
+                .check-icon {
+                    width: 18px;
+                }
+
+                .crutch-bold {
+                    margin-right: -2px;
+                }
+
                 .hc-wrapper {
                     margin-left: 36px !important;
                 }
@@ -713,7 +754,7 @@ input.form-control:focus {
 
                 .advantage-title {
                     font-size: 20px;
-                    line-height: 36px;
+                    line-height: 33px;
                     margin-bottom: 10px;
                 }
 
