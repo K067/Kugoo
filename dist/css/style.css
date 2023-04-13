@@ -35,6 +35,18 @@ html {
     color: #FFFFFF;
 }
 
+.crutch-bold {
+    margin-right: 2px;
+}
+
+.advantage-list {
+    padding: 0;
+}
+
+.advantage-list-item {
+    font-size: 20px;
+}
+
 .model-link {
     max-width: 460px;
 }
@@ -53,8 +65,87 @@ html {
     margin-top: 41px;
     max-width: 1380px;
     height: 100%;
+}
+
+.image-scale {
+    max-height: 100%;
+    width: 100%
+}
+
+.advantage-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.advantage {
+    position: relative;
+}
+
+.advantage-content {
+    max-width: 645px;
+    margin-top: 29px;
+}
+
+.advantage-title {
+    margin-bottom: 28px;
+}
+
+.advantage-text {
+    margin-bottom: 17px;
+}
+
+.advantage-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.advantage-list-item {
+    display: flex;
+    align-items: center;
+    color: #282739;
+}
+
+.advantage-text {
+    font-weight: 500 !important;
+}
+
+.advantage-list-item::before {
+    display: flex;
+    content: '';
+    background-image: url('/img/icon/CheckCircle.svg');
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.title {
+    letter-spacing: -0.7px;
+}
+
+.scooter-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 515px;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-border {
+    background: white;
+    border-radius: 10px;
+}
+
+.advantage {
+    margin-top: 66px;
+}
+
+.section {
     margin-left: auto;
     margin-right: auto;
+    max-width: 1440px;
 }
 
 .header-button {
@@ -123,6 +214,12 @@ html {
     border-radius: 10px;
 }
 
+@supports (background-image: -webkit-image-set(url('/img/png/woman-riding.webp') 1x)) {
+    .header-image-native {
+        background-image: -webkit-image-set(url('/img/png/woman-riding.webp') 1x)
+    }
+}
+
 .header-image-native::before {
     content: "";
     position: absolute;
@@ -141,6 +238,7 @@ html {
     font-size: 37px;
     line-height: 51px;
     text-transform: uppercase;
+    color: #282739;
 }
 
 .text {
@@ -148,6 +246,7 @@ html {
     font-weight: 400;
     font-size: 22px;
     line-height: 29px;
+    color: #282739;
 }
 
 .info-item {
@@ -329,6 +428,19 @@ input.form-control:focus {
     @media (max-width:1440px) {
         html {
             font-size: 12px;
+        }
+
+        .advantage-list-item {
+            font-size: 18px;
+        }
+
+        .scooter-image {
+            right: 30px;
+            width: 35.8%;
+        }
+
+        .advantage-content {
+            width: 61%;
         }
 
         .test-drive-header {
