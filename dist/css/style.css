@@ -1,6 +1,7 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 @import url(bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 
@@ -24,6 +25,125 @@ html {
     font-size: 14px;
     line-height: 17px;
     color: white;
+}
+
+.model-image {
+    display: block;
+    max-width: 255px;
+    position: relative;
+}
+
+.balance {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.card-content,
+.card-content-title {
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 25px;
+    max-width: 206px;
+}
+
+.card-native {
+    /* ! */
+    height: 492px;
+}
+
+.card-content {
+    display: flex;
+    gap: 25px;
+    margin-right: 6px;
+    max-width: 225px;
+}
+
+.title-models {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.cards {
+    margin-top: 50px;
+}
+
+.card-content-title {
+    letter-spacing: -0.4px;
+}
+
+.card-info-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card-info-item {
+    display: flex;
+    gap: 10px;
+}
+
+.card-content-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: #282739;
+}
+
+.card-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #5D6C7B;
+
+}
+
+.model-image-alt {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top-info {
+    position: absolute;
+    display: flex;
+    width: 92%;
+    align-items: center;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+.top-text {
+    margin: 12px 0;
+    background: #EE685F;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 4px 8px;
+    color: #FFFFFF;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card-native {
+    border: 1.5px solid #EAEBED;
+    border-radius: 10px;
+}
+
+.title-models {
+    max-width: 732px;
+    margin: 0 190px;
+}
+
+.models {
+    margin-top: 125px;
 }
 
 .model-link-item {
@@ -449,6 +569,14 @@ input.form-control:focus {
             font-size: 18px;
         }
 
+        .card-info {
+            font-size: 14px;
+        }
+
+        .card-content-title {
+            font-size: 18px;
+        }
+
         .scooter-image {
             right: 30px;
             width: 35.8%;
@@ -525,15 +653,29 @@ input.form-control:focus {
             gap: 8.5px;
         }
 
-        /* @media(max-width:1200px) {
-
-        } */
+        @media(max-width:1200px) {
+            .title-models {
+                margin: 0 100px;
+            }
+        }
     }
 }
 
 @media(max-width:991.98px) {
     html {
         font-size: 10px;
+    }
+
+    .card-content-title {
+        font-size: 16px;
+    }
+
+    .title-models {
+        margin: 0 40px;
+    }
+
+    .card-info {
+        font-size: 12px;
     }
 
     .span-text {
@@ -708,6 +850,14 @@ input.form-control:focus {
             @media(max-width:576px) {
                 .container-native {
                     max-width: 90%;
+                }
+
+                .card-info {
+                    font-size: 10px;
+                }
+
+                .card-content-title {
+                    font-size: 14px;
                 }
 
                 .advantage-list-item {
