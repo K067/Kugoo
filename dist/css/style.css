@@ -916,7 +916,7 @@ input.form-control:focus {
 
         .scooter-image {
             right: -125px;
-            left: -125px;
+            left: 125px;
         }
 
         @media(max-width:768px) {
