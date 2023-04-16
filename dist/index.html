@@ -418,29 +418,30 @@
     </section>
     <section class="form-section section">
         <div class="bg-grey">
-            <picture class="scooter-image">
-                <source type="image/webp" srcset="./img/png/awoman.webp">
-                <source type="image/png" srcset="./img/png/awoman.png">
-                <img src="./img/png/awoman.png" class="image-scale image-border">
+            <picture class="scooter-image woman-image">
+                <source type="image/webp" srcset="./img/png/woman.webp">
+                <source type="image/png" srcset="./img/png/woman.png">
+                <img src="./img/png/woman.png" class="image-scale">
             </picture>
-        </div>
-        <div class="form-wrapper">
-            <form id="form1" name="user_form" class="form-main">
-                <h2 class="title form-title">Нет нужной модели, которую хотите протестировать?</h2>
-                <p class="form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
-                <div class="input-group">
-                    <input type="tel" class="form-phone" id="form1-phone" name="user_phone"
-                        placeholder="+7 (___) __ - __ - __">
-                    <button class="button form-button">Оставить заявку на тест-драйв</button>
-                </div>
-                <div class="form-policy">
-                    <input type="checkbox?">
-                    <span class="form-policy-text">
-                        Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
-                        политикой конфиденциальности
-                    </span>
-                </div>
-            </form>
+            <div class="form-wrapper">
+                <form id="form1" name="user_form" class="form-main">
+                    <h2 class="title form-title">Нет нужной модели, которую хотите протестировать?</h2>
+                    <p class="form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
+                    <div class="input-group">
+                        <input type="tel" class="form-phone" id="form1-phone" name="user_phone" placeholder=" ">
+                        <label for="form1-phone" class="phone-label">+7 (___) __ - __ - __</label>
+                        <button class="button-native form-button">Оставить заявку на тест-драйв</button>
+                    </div>
+                    <div class="form-policy">
+                        <label class="form-policy-text">
+                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                            <u>политикой конфиденциальности</u>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 </body>
