@@ -375,7 +375,7 @@ html {
 }
 
 .form-main {
-    max-width: 613px;
+    max-width: 645px;
     margin-left: 135px;
 }
 
@@ -752,7 +752,7 @@ input.form-control:focus {
 
 .form-policy {
     display: flex;
-    max-width: 340px;
+    max-width: 379px;
 }
 
 .form-control {
