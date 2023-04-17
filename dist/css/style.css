@@ -140,9 +140,9 @@ html {
 }
 
 .modal-native {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -150,7 +150,40 @@ html {
     height: 100%;
     background-color: rgba(41, 45, 51, .5);
     z-index: 10;
-    display: flex
+    display: none
+}
+
+.application-wrapper {
+    width: 345px !important;
+    min-height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-span {
+    margin: 50px 0 !important;
+    font-size: 60px !important;
+}
+
+.application-main {
+    align-items: center;
+}
+
+.application-title {
+    text-align: center;
+    margin-bottom: 30px !important;
+    font-size: 29px !important;
+}
+
+.application-text {
+    font-size: 18px;
+    margin-left: 18px;
+    margin-bottom: 120px !important;
+}
+
+.button-back {
+    min-width: 263px;
 }
 
 .modal-wrapper {

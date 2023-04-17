@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="head">
         <div class="container-fluid">
             <a class="navbar-brand nav-span-text container-native" href="#">KUGOO</a>
             <button class="navbar-toggler container-native" type="button" data-bs-toggle="collapse"
@@ -84,7 +84,9 @@
         <div class="container-native">
             <div class="search-menu">
                 <a class="span-text">KUGOO</a>
-                <button class="button-native catalog-button">Каталог</button>
+                <a href="#models">
+                    <button class="button-native catalog-button">Каталог</button>
+                </a>
                 <div class="input-group mb-3">
                     <input type="text" id="search" class="form-control" placeholder=" ">
                     <label for="search" class="label-native">Искать самокат KUGO</label>
@@ -130,7 +132,7 @@
                         <a href="" class="model-link-item">Проверите лучшие самокаты в деле</a>
                     </div>
                 </div>
-                <button class="button-native header-button">Записаться</button>
+                <button class="button-native header-button popup">Записаться</button>
             </div>
         </div>
     </header>
@@ -265,7 +267,7 @@
                             </a>
                         </div>
                     </div>
-                    <button class="button-native button-card">Записаться на тест-драйв</button>
+                    <button class="button-native button-card popup">Записаться на тест-драйв</button>
                 </div>
                 <div class="card-native">
                     <picture class="model-image">
@@ -314,7 +316,7 @@
                             </a>
                         </div>
                     </div>
-                    <button class="button-native button-card">Записаться на тест-драйв</button>
+                    <button class="button-native button-card popup">Записаться на тест-драйв</button>
                 </div>
                 <div class="card-native">
                     <picture class="model-image">
@@ -363,7 +365,7 @@
                             </a>
                         </div>
                     </div>
-                    <button class="button-native button-card">Записаться на тест-драйв</button>
+                    <button class="button-native button-card popup">Записаться на тест-драйв</button>
                 </div>
                 <div class="card-native">
                     <picture class="model-image">
@@ -412,7 +414,7 @@
                             </a>
                         </div>
                     </div>
-                    <button class="button-native button-card">Записаться на тест-драйв</button>
+                    <button class="button-native button-card popup">Записаться на тест-драйв</button>
                 </div>
             </div>
         </div>
@@ -447,7 +449,7 @@
     </section>
     <div class="modal-native">
         <div class="modal-wrapper">
-            <a href="#" class="modal-close">
+            <a href="" class="modal-close">
                 <img src="./img/icon/cross.svg" alt="close" class="close-button">
             </a>
             <picture class="riding-image">
@@ -477,6 +479,24 @@
                     </label>
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="modal-native application">
+        <div class="modal-wrapper application-wrapper">
+            <a class="span-text modal-span">KUGOO</a>
+            <div class="modal-form-main application-main">
+                <h2 class="modal-title application-title">Спасибо за заявку!</h2>
+                <a href="#" class="modal-close">
+                    <img src="./img/icon/cross.svg" alt="close" class="close-button">
+                </a>
+                <p class="modal-text application-text">
+                    Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в
+                    самых сложных случаях!
+                </p>
+                <a href="#">
+                    <button type="submit" class="button-native button-back">Вернуться на главную</button>
+                </a>
+            </div>
         </div>
     </div>
     </div>

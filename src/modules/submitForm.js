@@ -1,5 +1,5 @@
 import validPlus from "./validPlus";
-import modal from "./modal";
+import application from "./application";
 import defaultModal from "./defaultModal";
 import formSending from "./formSending";
 
@@ -39,8 +39,8 @@ const submitForm = () => {
                 if (validPlus(formElements.querySelectorAll('input'))) {
                     formSending(formData, formElements.getAttribute('action')).then(() => {
 
-                        // defaultModal();
-                        // modalFunc(modal[1]);
+                        defaultModal();
+                        application(document.querySelector('.application'));
 
                         formElements.querySelectorAll('input').forEach(input => {
                             input.value = '';
