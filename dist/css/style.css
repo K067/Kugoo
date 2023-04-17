@@ -29,6 +29,72 @@ html {
     justify-content: flex-start;
 }
 
+.modal-form-main {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    max-width: 263px;
+}
+
+.text-beta {
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+    width: 286px;
+    font-size: 14px !important;
+    line-height: normal !important;
+    letter-spacing: -0.3px;
+}
+
+.modal-text {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    letter-spacing: -0.3px !important;
+}
+
+.ig-title {
+    margin-top: 86px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+    margin-bottom: 20px;
+}
+
+.modal-policy {
+    margin-left: 17px;
+    max-width: 230px !important;
+}
+
+.modal-group {
+    margin-bottom: 18px !important;
+    justify-content: center;
+}
+
+.modal-button {
+    min-width: 263px;
+    padding: 18px 25px !important;
+}
+
+.modal-form-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-title {
+    margin-bottom: 9px !important;
+}
+
+.riding-image {
+    position: absolute;
+    right: 57px;
+    top: 48px;
+    max-width: 337.6px;
+    height: auto;
+    object-fit: cover;
+}
+
 .bg-grey {
     border-radius: 10px;
 }
@@ -63,6 +129,40 @@ html {
     margin-top: 10px;
 }
 
+.form-policy {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 25px !important;
+    line-height: normal !important;
+}
+
+.modal-native {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, .5);
+    z-index: 10;
+    display: flex
+}
+
+.modal-wrapper {
+    background-color: #fff;
+    margin: auto;
+    width: 790px;
+    padding: 0 40px;
+    padding-top: 40px;
+    padding-bottom: 37px;
+    position: relative
+}
+
 .form-phone {
     position: relative;
     min-width: 263px;
@@ -72,6 +172,26 @@ html {
     border-radius: 5px;
     padding: 15px 25px;
     font-size: 16px;
+}
+
+.close-button {
+    width: 28.3px;
+    height: 28.3px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.just-validate-error-label {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .phone-label {
@@ -754,7 +874,7 @@ input.form-control:focus {
 .form-policy-text {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     color: #282739;
 }
@@ -957,6 +1077,22 @@ input.form-control:focus {
 
     .form-policy-text {
         font-size: 10px;
+    }
+
+    .text-beta {
+        width: 235px;
+    }
+
+    .modal-form-main {
+        align-items: center;
+    }
+
+    .modal-wrapper {
+        width: 345px;
+    }
+
+    .riding-image {
+        display: none;
     }
 
     .woman-image {
@@ -1291,6 +1427,15 @@ input.form-control:focus {
                 .form-text {
                     line-height: 20px;
                     text-align: center;
+                }
+            }
+
+            @media(max-width:357px) {
+                .modal-wrapper {
+                    width: 295px;
+                    padding: 0 16px;
+                    padding-top: 40px;
+                    padding-bottom: 37px;
                 }
             }
 
