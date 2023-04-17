@@ -1,6 +1,6 @@
 import validPlus from "./validPlus";
 
-const formSending = ({ id, someElement = [] }) => {
+const formSending = ({ id }) => {
     const form = document.getElementById(id);
     const statusBlock = document.createElement('div');
     const errorText = 'Ошибка';
@@ -28,22 +28,6 @@ const formSending = ({ id, someElement = [] }) => {
             if (val !== '') {
                 formBody[key] = val;
             }
-        });
-
-        someElement.forEach(elem => {
-            const element = document.getElementById(elem.id);
-
-            if (element.textContent === '0') {
-                return false;
-            } else {
-                if (elem.type === 'block') {
-                    formBody[elem.id] = element.textContent;
-                } else if (elem.type === 'input') {
-                    formBody[elem.id] = element.value;
-
-                }
-            }
-
         });
 
         if (validPlus(formElements)) {

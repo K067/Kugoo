@@ -3,11 +3,6 @@ const validate = list => {
 
     list.forEach(elem => {
         switch (elem.getAttribute('name')) {
-            case 'user_name':
-                if (/^[а-яё]{2,}/gi.test(elem.value.trim())) {
-                    return;
-                }
-                break;
             case 'user_phone':
                 if (elem.value.length === 18) {
                     return;
