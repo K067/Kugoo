@@ -132,6 +132,7 @@ html {
 .form-policy {
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 
 .modal-title {
@@ -222,9 +223,16 @@ html {
 }
 
 .just-validate-error-label {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 10px;
+    padding-top: 1px;
+    position: absolute;
+    top: -11px;
+    left: -5px;
+    transform: translateY(-50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: inherit;
+    display: inline-block;
+    font-size: 12px;
 }
 
 .phone-label {
