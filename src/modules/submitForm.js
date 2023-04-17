@@ -51,9 +51,16 @@ const submitForm = () => {
                     });
                 } else {
                     const formPolicy = document.querySelector('.form-policy');
-                    formPolicy.append(statusBlock)
-                    statusBlock.style.color = 'red';
-                    statusBlock.textContent = invalidText;
+                    const modalPolicy = document.querySelector('.modal-policy');
+                    if (document.querySelector('.modal-native').style.display === 'flex') {
+                        modalPolicy.append(statusBlock);
+                        statusBlock.style.color = 'red';
+                        statusBlock.textContent = invalidText;
+                    } else {
+                        formPolicy.append(statusBlock);
+                        statusBlock.style.color = 'red';
+                        statusBlock.textContent = invalidText;
+                    }
 
                     setTimeout(() => { statusBlock.textContent = ''; }, 5000);
                 }
