@@ -1132,6 +1132,10 @@ input.form-control:focus {
         width: 345px;
     }
 
+    .application-wrapper {
+        width: 345px !important;
+    }
+
     .riding-image {
         display: none;
     }
@@ -1176,6 +1180,10 @@ input.form-control:focus {
 
     .span-text {
         display: none;
+    }
+
+    .modal-span {
+        display: block !important;
     }
 
     .advantage {
@@ -1477,6 +1485,10 @@ input.form-control:focus {
                     padding: 0 16px;
                     padding-top: 40px;
                     padding-bottom: 37px;
+                }
+
+                .application-wrapper {
+                    width: 295px !important;
                 }
             }
 

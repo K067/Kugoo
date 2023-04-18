@@ -6,7 +6,7 @@ import formSending from "./formSending";
 const submitForm = () => {
     const statusBlock = document.createElement('div');
     const invalidText = 'Форма заполнена неверно';
-    const form = document.querySelectorAll('form');
+    const form = document.querySelectorAll('.global');
 
     statusBlock.classList.add('just-validate-error-label')
 
@@ -21,10 +21,6 @@ const submitForm = () => {
                     errorMessage: 'Укажите телефон',
                 },
             ])
-            // .addField('input[name=user_email]', [
-            //     {
-            //     },
-            // ])
             .addField('input[name=user_check]', [
                 {
                     rule: 'required',

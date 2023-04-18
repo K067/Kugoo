@@ -1,12 +1,12 @@
 <?php
-$user_name=htmlspecialchars($_POST["username"]);
-$user_phone=htmlspecialchars($_POST["userphone"]);
+$user_email=htmlspecialchars($_POST["user_email"]);
+$user_phone=htmlspecialchars($_POST["user_phone"]);
 
 $token = "6144473339:AAGEvoLd26LjgExd0hPEkxpUJig5GSLDBA8";
 $chat_id = "-993149160";
 
 $formData = array(
-   "client: " => $user_name ,
+   "email: " => $user_email ,
     "phone: " => $user_phone
 );
 
