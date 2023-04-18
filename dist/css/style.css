@@ -38,7 +38,9 @@ html {
 
 .discount-wrapper {
     display: flex;
-    padding: 25px 165px;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
 }
 
 .form-email {
@@ -63,18 +65,33 @@ html {
     padding: 15px 25px;
 }
 
+.email-button {
+    background-color: #fff !important;
+    color: #6F73EE !important;
+}
+
 .discount-title {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
     color: #FFFFFF;
     max-width: 445px;
+    margin-bottom: 0 !important;
+    letter-spacing: 0.3px;
+}
+
+.discount-form {
+    height: 53px;
+    position: relative;
 }
 
 .bg-blue {
     background: #6f73ee;
+    padding-top: 24px;
+    padding-bottom: 21px;
+    position: relative;
 }
 
 .text-beta {
@@ -556,6 +573,12 @@ html {
     margin-top: 100px;
     position: relative;
     top: -5px;
+}
+
+.discount-section {
+    margin-top: 93px;
+    max-width: none !important;
+    width: 100% !important;
 }
 
 .form-title {
@@ -1135,6 +1158,18 @@ input.form-control:focus {
                     margin: 0 100px;
                 }
 
+                .input-group-email {
+                    flex-direction: row !important;
+                }
+
+                .form-email {
+                    min-width: 263px;
+                }
+
+                .discount-wrapper {
+                    justify-content: flex-start;
+                }
+
                 .input-group-native {
                     max-width: 263px !important;
                     flex-direction: column;
@@ -1146,6 +1181,12 @@ input.form-control:focus {
 
                 .cards {
                     flex-wrap: wrap;
+                }
+
+                @media(max-width:1120px) {
+                    .form-email {
+                        min-width: unset;
+                    }
                 }
             }
         }
@@ -1159,6 +1200,27 @@ input.form-control:focus {
 
     .form-policy-text {
         font-size: 10px;
+    }
+
+    .discount-form {
+        height: 120px;
+    }
+
+    .discount-title {
+        text-align: center;
+    }
+
+    .form-email {
+        min-width: 263px
+    }
+
+    .discount-wrapper {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+
+    .input-group-email {
+        flex-direction: column !important;
     }
 
     .text-beta {
@@ -1397,8 +1459,20 @@ input.form-control:focus {
                     max-width: 90%;
                 }
 
+                .form-section {
+                    margin-top: 50px !important;
+                }
+
+                .discount-section {
+                    margin-top: 43px;
+                }
+
                 .form-policy-text {
                     font-size: 10px;
+                }
+
+                .discount-title {
+                    max-width: 320px;
                 }
 
                 .bg-grey {
