@@ -62,7 +62,9 @@ html {
 /* i had an anomaly at the email label...  */
 ::placeholder {
     color: white;
-    opacity: 1;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .email-label {
@@ -957,10 +959,14 @@ input.form-control:focus {
     display: flex;
     margin-right: 20px;
     align-items: center;
-    padding: 8px 0;
+    padding: 12px 0;
     letter-spacing: 0.5px;
     padding-left: 15px;
     padding-right: 18px;
+}
+
+.test-drive-header {
+    margin-top: 30px;
 }
 
 .side-menu {
