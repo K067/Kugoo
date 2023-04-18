@@ -48,6 +48,73 @@ html {
     gap: 95px;
 }
 
+.fb-wrapper {
+    display: flex;
+    gap: 249.9px;
+}
+
+.sg-wrapper {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 17px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.second {
+    padding-right: 27px !important;
+}
+
+.third {
+    padding-right: 22px !important;
+}
+
+.social-link-image {
+    width: 20px;
+    height: 20px;
+}
+
+.sg-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+}
+
+.numbers {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #5D6C7B;
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 59.2px;
+}
+
+.link-group-native {
+    display: flex;
+    gap: 10.1px;
+}
+
+.line {
+    opacity: 0.15;
+    border: 1px solid #5D6C7B;
+}
+
+.footer-bottom {
+    padding-top: 36px;
+    padding-bottom: 35px;
+}
+
 .form-email {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
@@ -710,8 +777,18 @@ html {
     width: 300px;
 }
 
+.footer-span {
+    margin-right: 0 !important;
+}
+
+.social-group {
+    display: flex;
+    gap: 10px;
+}
+
 .footer-top {
     justify-content: center;
+    margin-bottom: 55px;
 }
 
 .footer-menu-link {
