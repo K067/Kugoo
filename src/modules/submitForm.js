@@ -7,8 +7,36 @@ const submitForm = () => {
     const statusBlock = document.createElement('div');
     const invalidText = 'Форма заполнена неверно';
     const form = document.querySelectorAll('.global');
+    const emailButton = document.querySelector('.email-button');
 
     statusBlock.classList.add('just-validate-error-label')
+
+    emailButton.addEventListener('click', e => {
+        e.preventDefault();
+        const formElements = document.querySelector('.discount-form');
+        const formData = new FormData(formElements);
+
+        if (validPlus(formElements.querySelectorAll('input'))) {
+            formSending(formData, formElements.getAttribute('action')).then(() => {
+
+                defaultModal();
+                application(document.querySelector('.application'));
+
+                formElements.querySelectorAll('input').forEach(input => {
+                    input.value = '';
+                });
+
+            }).catch(() => {
+                alert('ошибка');
+            });
+        } else {
+            document.querySelector('.form-email').append(statusBlock);
+            statusBlock.style.color = 'red';
+            statusBlock.textContent = invalidText;
+
+            setTimeout(() => { statusBlock.textContent = ''; }, 5000);
+        }
+    });
 
     form.forEach(data => {
         const validation = new JustValidate(data, {
