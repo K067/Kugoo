@@ -30,6 +30,7 @@ const submitForm = () => {
                 alert('ошибка');
             });
         } else {
+            // !
             document.querySelector('.form-email').append(statusBlock);
             statusBlock.style.color = 'red';
             statusBlock.textContent = invalidText;

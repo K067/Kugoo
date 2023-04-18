@@ -36,6 +36,47 @@ html {
     max-width: 263px;
 }
 
+.discount-wrapper {
+    display: flex;
+    padding: 25px 165px;
+}
+
+.form-email {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 16px;
+    min-width: 410px;
+    height: 53px;
+}
+
+.email-label {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 25px;
+}
+
+.discount-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 445px;
+}
+
+.bg-blue {
+    background: #6f73ee;
+}
+
 .text-beta {
     margin-top: 25px !important;
     margin-bottom: 0 !important;
