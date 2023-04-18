@@ -30,12 +30,11 @@ const submitForm = () => {
                 alert('ошибка');
             });
         } else {
-            // !
             document.querySelector('.input-group-email').append(statusBlock);
             statusBlock.style.color = 'red';
             statusBlock.textContent = invalidText;
 
-            // setTimeout(() => { statusBlock.textContent = ''; }, 5000);
+            setTimeout(() => { statusBlock.textContent = ''; }, 5000);
         }
     });
 

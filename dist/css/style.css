@@ -59,6 +59,12 @@ html {
     height: 53px;
 }
 
+/* i had an anomaly at the email label...  */
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
 .email-label {
     position: absolute;
     font-style: normal;
