@@ -65,6 +65,10 @@ html {
     gap: 13px;
 }
 
+.footer-bottom {
+    justify-content: center;
+}
+
 .second {
     padding-right: 27px !important;
 }
@@ -1378,6 +1382,10 @@ input.form-control:focus {
                     gap: 70px;
                 }
 
+                .fb-wrapper {
+                    gap: 80px;
+                }
+
                 .form-email {
                     min-width: 263px;
                 }
@@ -1412,6 +1420,23 @@ input.form-control:focus {
 @media(max-width:991.98px) {
     html {
         font-size: 10px;
+    }
+
+    .footer-span {
+        display: block !important;
+        margin: 0 !important;
+        max-width: 116px;
+    }
+
+    .link-group-native,
+    .social-group {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom,
+    .fb-wrapper {
+        flex-direction: column;
+        gap: 37.2px;
     }
 
     .footer-top {
