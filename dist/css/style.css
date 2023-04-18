@@ -19,6 +19,11 @@ html {
     font-size: 16px;
 }
 
+.form-email,
+.form-phone:focus {
+    outline: none;
+}
+
 .form-phone:focus~.phone-label,
 .form-phone:not(:placeholder-shown).form-phone:not(:focus)~.phone-label {
     display: none;
@@ -63,6 +68,7 @@ html {
     text-align: center;
     color: #FFFFFF;
     padding: 15px 25px;
+    cursor: text;
 }
 
 .email-button {
