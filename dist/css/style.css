@@ -626,6 +626,119 @@ html {
     padding-bottom: 78px;
 }
 
+.list-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #282739;
+}
+
+.footer-phone {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #282739;
+}
+
+.list-day {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+}
+
+.footer-menu-wrapper:nth-child(3) {
+    margin-left: -60px;
+}
+
+.footer-menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 17px;
+}
+
+.footer-menu-contact {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-contact-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 143px;
+}
+
+.list-title {
+    margin-bottom: 7px;
+}
+
+.not-button {
+    margin-top: 5px;
+    margin-left: -53px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #6F73EE !important;
+    min-width: 90px;
+    max-height: 17px;
+}
+
+.footer-menu-contact {
+    margin-top: 17px;
+}
+
+.footer-phone {
+    margin-bottom: 5px;
+}
+
+.footer-menu-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #282739;
+    min-width: 130px;
+}
+
+.column-list {
+    columns: 8rem auto;
+    width: 300px;
+}
+
+.footer-top {
+    justify-content: center;
+}
+
+.footer-menu-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D6C7B;
+}
+
+.footer-menu-item {
+    margin-bottom: 10px;
+}
+
+.footer-native {
+    padding-top: 46px;
+}
+
+.footer-top {
+    display: flex;
+    gap: 125px;
+}
+
+.footer-native {
+    background: #f4f7fb;
+}
+
 .form-main {
     max-width: 645px;
     margin-left: 135px;
@@ -955,6 +1068,10 @@ input.form-control:focus {
     border-radius: 5px;
 }
 
+.footer-top {
+    display: flex;
+}
+
 .catalog-button {
     display: flex;
     margin-right: 20px;
@@ -1180,6 +1297,10 @@ input.form-control:focus {
                     flex-direction: row !important;
                 }
 
+                .footer-top {
+                    gap: 70px;
+                }
+
                 .form-email {
                     min-width: 263px;
                 }
@@ -1214,6 +1335,28 @@ input.form-control:focus {
 @media(max-width:991.98px) {
     html {
         font-size: 10px;
+    }
+
+    .footer-top {
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .footer-menu-contact {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .not-button {
+        margin-left: unset;
+    }
+
+    .column-list {
+        columns: 1 auto;
+    }
+
+    .footer-menu-wrapper:nth-child(3) {
+        margin-left: unset;
     }
 
     .form-policy-text {
