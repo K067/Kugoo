@@ -1223,6 +1223,18 @@ input.form-control:focus {
     color: #282739
 }
 
+.info-item {
+    align-items: flex-start;
+}
+
+.catalog-button {
+    height: 40px;
+}
+
+.info {
+    margin-bottom: 3px;
+}
+
 @media(max-width:1700px) {
     .container-native {
         max-width: 80%
