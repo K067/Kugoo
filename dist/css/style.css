@@ -1,85 +1,116 @@
 @import url(normalize.css);
 @import url(bootstrap.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Jost&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap);
+
+.email-label,
+.phone-label {
+    cursor: text;
+    text-align: center
+}
+
+.button-card,
+.email-label,
+.phone-label,
+.title-models {
+    text-align: center
+}
+
+.discount-title,
+.form-title,
+.title {
+    text-transform: uppercase
+}
+
+.model-link-item,
+.social-item-link {
+    text-decoration: none
+}
 
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: Jost, sans-serif;
     overflow-x: hidden;
-    line-height: 1 !important;
+    line-height: 1 !important
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 html {
-    font-size: 16px;
+    font-size: 16px
 }
 
 .form-email,
 .form-phone:focus {
-    outline: none;
+    outline: 0
 }
 
 .form-phone:focus~.phone-label,
-.form-phone:not(:placeholder-shown).form-phone:not(:focus)~.phone-label {
-    display: none;
+.form-phone:not(:placeholder-shown).form-phone:not(:focus)~.phone-label,
+.nav-span-text {
+    display: none
 }
 
+.advantage-wrapper,
 .form-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start
 }
 
 .modal-form-main {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
-    max-width: 263px;
+    max-width: 263px
 }
 
 .discount-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 95px;
+    gap: 95px
+}
+
+.application-main,
+.sg-wrapper {
+    align-items: center
 }
 
 .fb-wrapper {
     display: flex;
-    gap: 249.9px;
+    gap: 249.9px
 }
 
 .sg-wrapper {
-    background: #FFFFFF;
+    background: #fff;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    padding-right: 17px;
-    padding-left: 12px;
+    padding: 5px 17px 7px 12px;
     display: flex;
-    align-items: center;
-    gap: 13px;
+    gap: 13px
 }
 
 .footer-bottom {
     justify-content: center;
+    display: flex;
+    gap: 59.2px;
+    padding-top: 38px;
+    padding-bottom: 30px
 }
 
 .second {
-    padding-right: 27px !important;
+    padding-right: 27px !important
 }
 
 .third {
-    padding-right: 22px !important;
+    padding-right: 22px !important
 }
 
 .social-link-image {
     width: 20px;
-    height: 20px;
+    height: 20px
 }
 
 .sg-title {
@@ -87,83 +118,86 @@ html {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #282739;
+    color: #282739
+}
+
+.email-label,
+.numbers {
+    font-weight: 400;
+    font-style: normal
 }
 
 .numbers {
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    color: #5D6C7B;
-    margin-bottom: 0;
+    color: #5d6c7b;
+    margin-bottom: 0
 }
 
-.footer-bottom {
-    display: flex;
-    gap: 59.2px;
+.email-label,
+.form-email {
+    font-size: 16px;
+    padding: 15px 25px
+}
+
+.discount-title,
+.modal-text,
+.text-beta {
+    margin-bottom: 0 !important
 }
 
 .link-group-native {
     display: flex;
-    gap: 10.1px;
+    gap: 10.1px
 }
 
 .line {
-    opacity: 0.15;
-    border: 1px solid #5D6C7B;
-}
-
-.footer-bottom {
-    padding-top: 38px;
-    padding-bottom: 30px;
+    opacity: .15;
+    border: 1px solid #5d6c7b
 }
 
 .social-list-alt {
     display: flex;
     gap: 14px;
-    margin-left: 32px;
+    margin-left: 32px
 }
 
 .social-item-link-alt {
     width: 16px;
-    height: 16px;
+    height: 16px
 }
 
 .form-email {
     position: relative;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, .2);
     border: 0;
     border-radius: 5px;
-    padding: 15px 25px;
-    font-size: 16px;
     min-width: 410px;
-    height: 53px;
+    height: 53px
 }
 
-/* i had an anomaly at the email label...  */
+.button-back,
+.form-phone,
+.modal-button {
+    min-width: 263px
+}
+
 ::placeholder {
-    color: white;
-    font-family: 'Jost';
+    color: #fff;
+    font-family: Jost;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .email-label {
     position: absolute;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 15px 25px;
-    cursor: text;
+    color: #fff
 }
 
 .email-button {
     background-color: #fff !important;
-    color: #6F73EE !important;
+    color: #6f73ee !important
 }
 
 .discount-title {
@@ -171,73 +205,69 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    color: #fff;
     max-width: 445px;
-    margin-bottom: 0 !important;
-    letter-spacing: 0.3px;
+    letter-spacing: .3px
 }
 
 .discount-form {
     height: 53px;
-    position: relative;
+    position: relative
 }
 
 .bg-blue {
     background: #6f73ee;
     padding-top: 24px;
     padding-bottom: 21px;
-    position: relative;
+    position: relative
 }
 
 .text-beta {
     margin-top: 25px !important;
-    margin-bottom: 0 !important;
     width: 286px;
     font-size: 14px !important;
     line-height: normal !important;
-    letter-spacing: -0.3px;
+    letter-spacing: -.3px
+}
+
+.adress,
+.day-time,
+.ig-title {
+    font-style: normal;
+    line-height: 17px
 }
 
 .modal-text {
     margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    letter-spacing: -0.3px !important;
+    letter-spacing: -.3px !important
 }
 
 .ig-title {
     margin-top: 86px;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 17px;
-    color: #5D6C7B;
-    margin-bottom: 20px;
+    color: #5d6c7b;
+    margin-bottom: 20px
 }
 
 .modal-policy {
     margin-left: 17px;
-    max-width: 230px !important;
+    max-width: 230px !important
 }
 
 .modal-group {
     margin-bottom: 18px !important;
-    justify-content: center;
+    justify-content: center
 }
 
 .modal-button {
-    min-width: 263px;
-    padding: 18px 25px !important;
+    padding: 18px 25px !important
 }
 
 .modal-form-wrapper {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.modal-title {
-    margin-bottom: 9px !important;
+    flex-wrap: wrap
 }
 
 .riding-image {
@@ -246,52 +276,57 @@ html {
     top: 48px;
     max-width: 337.6px;
     height: auto;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .bg-grey {
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .adress,
 .day-time {
-    font-style: normal;
     font-size: 14px;
-    line-height: 17px;
-    color: white;
+    color: #fff
+}
+
+.phone-label,
+.price-one {
+    color: #5d6c7b;
+    font-style: normal
 }
 
 .model-image {
     display: block;
     width: 255px;
-    position: relative;
+    position: relative
 }
 
 .icon-circle {
     width: 40px;
-    height: 40px;
+    height: 40px
 }
 
 .prices {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .balance {
     width: 35px;
     height: 35px;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .form-policy {
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
+    position: relative
 }
 
 .modal-title {
+    margin-bottom: 9px !important;
     font-size: 25px !important;
-    line-height: normal !important;
+    line-height: normal !important
 }
 
 .modal-native {
@@ -313,58 +348,47 @@ html {
     min-height: 590px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .modal-span {
     margin: 50px 0 !important;
-    font-size: 60px !important;
-}
-
-.application-main {
-    align-items: center;
+    font-size: 60px !important
 }
 
 .application-title {
     text-align: center;
     margin-bottom: 30px !important;
-    font-size: 29px !important;
+    font-size: 29px !important
 }
 
 .application-text {
     font-size: 18px;
     margin-left: 18px;
-    margin-bottom: 120px !important;
-}
-
-.button-back {
-    min-width: 263px;
+    margin-bottom: 120px !important
 }
 
 .modal-wrapper {
     background-color: #fff;
     margin: auto;
     width: 790px;
-    padding: 0 40px;
-    padding-top: 40px;
-    padding-bottom: 37px;
+    padding: 40px 40px 37px;
     position: relative
 }
 
 .form-phone {
     position: relative;
-    min-width: 263px;
     height: 53px;
-    background: #FFFFFF;
-    border: 1px solid #EAEBED;
+    background: #fff;
+    border: 1px solid #eaebed;
     border-radius: 5px;
     padding: 15px 25px;
-    font-size: 16px;
+    font-size: 16px
 }
 
 .close-button {
     width: 28.3px;
-    height: 28.3px;
+    height: 28.3px
 }
 
 .modal-close {
@@ -373,7 +397,7 @@ html {
     right: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .just-validate-error-label {
@@ -382,25 +406,21 @@ html {
     top: -11px;
     left: -5px;
     transform: translateY(-50%);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     background-color: inherit;
     display: inline-block;
-    font-size: 12px;
+    font-size: 12px
 }
 
 .phone-label {
     position: absolute;
-    font-style: normal;
     top: 15px;
     left: 25px;
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.155em;
-    color: #5D6C7B;
-    cursor: text;
+    letter-spacing: .155em
 }
 
 .form-policy-text {
@@ -409,11 +429,10 @@ html {
     padding-left: 28px;
     margin-bottom: 0;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none
 }
 
 .form-policy-text input {
@@ -421,7 +440,7 @@ html {
     opacity: 0;
     cursor: pointer;
     height: 0;
-    width: 0;
+    width: 0
 }
 
 .checkmark {
@@ -430,24 +449,24 @@ html {
     left: 0;
     height: 16px;
     width: 16px;
-    background-color: white;
+    background-color: #fff
 }
 
 .woman-image {
     width: 410px !important;
     right: 180px !important;
     bottom: 0 !important;
-    top: auto !important;
+    top: auto !important
 }
 
 .checkmark:after {
     content: "";
     position: absolute;
-    display: none;
+    display: none
 }
 
 .form-policy-text input:checked~.checkmark:after {
-    display: block;
+    display: block
 }
 
 .form-policy-text .checkmark:after {
@@ -455,22 +474,20 @@ html {
     top: 3px;
     width: 10.56px;
     height: 8.55px;
-    background-image: url('/img/icon/check.svg');
+    background-image: url('/img/icon/check.svg')
 }
 
 .last-info-content {
     display: flex;
     margin-top: 25px !important;
-    gap: 25px;
+    gap: 25px
 }
 
 .price-one {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
-    text-decoration-line: line-through;
-    color: #5D6C7B;
+    text-decoration-line: line-through
 }
 
 .price-two {
@@ -478,101 +495,92 @@ html {
     font-weight: 600;
     font-size: 20px;
     line-height: 29px;
-    color: #282739;
+    color: #282739
 }
 
+.button-card,
 .card-content,
 .card-content-title,
-.last-info-content,
-.button-card {
+.last-info-content {
     margin-top: 20px;
     margin-left: 24px;
     margin-right: 25px;
-    max-width: 206px;
+    max-width: 206px
 }
 
 .button-card {
     margin-top: 19px;
     margin-bottom: 20px;
-}
-
-.action {
-    display: flex;
-    gap: 10px;
-}
-
-.button-card {
     font-style: normal;
     font-weight: 400;
     font-size: 12px !important;
     line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 10px 36px !important;
+    color: #fff;
+    padding: 10px 36px !important
+}
+
+.action,
+.card-info-item,
+.social-group {
+    display: flex;
+    gap: 10px
 }
 
 .price-one,
 .price-two {
-    letter-spacing: -0.5px;
+    letter-spacing: -.5px
 }
 
 .card-content {
     display: flex;
     margin-right: 6px;
-    max-width: 225px;
-}
-
-.title-models {
-    margin-bottom: 0;
-    text-align: center;
+    max-width: 225px
 }
 
 .cards {
     margin-top: 50px;
-    justify-content: center;
+    justify-content: center
 }
 
 .card-content-title {
-    letter-spacing: -0.4px;
+    letter-spacing: -.4px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: #282739
 }
 
 .card-info-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-}
-
-.card-info-item {
-    display: flex;
-    gap: 10px;
-}
-
-.card-content-title {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    color: #282739;
+    gap: 16px
 }
 
 .card-info {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #5D6C7B;
+    color: #5d6c7b
+}
 
+.model-link-item,
+.top-text {
+    font-style: normal;
+    color: #fff;
+    font-weight: 500
 }
 
 .model-image-alt {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .top-info {
@@ -582,60 +590,67 @@ html {
     align-items: center;
     margin: 0 10px;
     justify-content: space-between;
-    top: -3px;
+    top: -3px
+}
+
+.bg-grey,
+.form-section,
+.relative {
+    position: relative
 }
 
 .top-text {
     margin: 12px 0;
-    background: #EE685F;
+    background: #ee685f;
     border-radius: 5px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
+    font-family: Jost;
     font-size: 12px;
     line-height: 17px;
-    padding: 4px 8px;
-    color: #FFFFFF;
+    padding: 4px 8px
 }
 
 .tt-alt {
-    background: #75d14a;
+    background: #75d14a
 }
 
 .cards {
     display: flex;
-    gap: 30px;
+    gap: 30px
 }
 
 .card-native {
-    border: 1.5px solid #EAEBED;
-    border-radius: 10px;
+    border: 1.5px solid #eaebed;
+    border-radius: 10px
 }
 
 .title-models {
     max-width: 1000px;
-    margin: 0 190px;
+    margin: 0 190px
 }
 
 .models {
-    margin-top: 130px;
+    margin-top: 130px
 }
 
 .model-link-item {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
+    line-height: 18px
+}
+
+.footer-phone,
+.form-text,
+.form-title,
+.list-title {
+    font-style: normal;
+    color: #282739
 }
 
 .crutch-bold {
-    margin-right: -6px;
+    margin-right: -6px
 }
 
 .advantage-list {
-    padding: 0;
+    padding: 0
 }
 
 .advantage-list-item {
@@ -645,137 +660,115 @@ html {
     gap: 10px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis
 }
 
 .model-link {
-    max-width: 460px;
+    max-width: 460px
 }
 
 .adress {
-    font-weight: 500;
+    font-weight: 500
 }
 
 .day-time {
     font-weight: 500;
-    opacity: 0.7;
-}
-
-.bg-grey {
-    position: relative;
-}
-
-.form-section {
-    margin-top: 100px;
-    position: relative;
-    top: -5px;
-}
-
-.discount-section {
-    margin-top: 93px;
-    max-width: none !important;
-    width: 100% !important;
-}
-
-.form-title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 37px;
-    line-height: 51px;
-    text-transform: uppercase;
-    color: #282739;
-    margin-bottom: 35px;
-}
-
-.form-text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 23px;
-    color: #282739;
-    margin-bottom: 20px;
-}
-
-.input-group-native {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    opacity: .7
 }
 
 .bg-grey {
     background: #f4f7fb;
     padding-top: 88px;
-    padding-bottom: 78px;
+    padding-bottom: 78px
+}
+
+.form-section {
+    margin-top: 100px;
+    top: -5px
+}
+
+.discount-section {
+    margin-top: 93px;
+    max-width: none !important;
+    width: 100% !important
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 51px;
+    margin-bottom: 35px
+}
+
+.form-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 20px
+}
+
+.input-group-native {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px
 }
 
 .list-title {
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
-    color: #282739;
+    margin-bottom: 7px
 }
 
 .footer-phone {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
-    color: #282739;
+    margin-bottom: 5px
+}
+
+.list-day,
+.not-button {
+    font-size: 12px;
+    line-height: 17px;
+    font-style: normal
 }
 
 .list-day {
-    font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-    color: #5D6C7B;
+    color: #5d6c7b
 }
 
 .footer-menu-wrapper:nth-child(3) {
-    margin-left: -60px;
+    margin-left: -60px
 }
 
 .footer-menu-list {
     list-style-type: none;
     padding: 0;
-    margin-top: 17px;
-}
-
-.footer-menu-contact {
-    display: flex;
-    gap: 40px;
+    margin-top: 17px
 }
 
 .footer-contact-item {
     display: flex;
     flex-direction: column;
-    min-width: 143px;
-}
-
-.list-title {
-    margin-bottom: 7px;
+    min-width: 143px
 }
 
 .not-button {
     margin-top: 5px;
     margin-left: -53px;
     cursor: pointer;
-    font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 17px;
-    color: #6F73EE !important;
+    color: #6f73ee !important;
     min-width: 90px;
-    max-height: 17px;
+    max-height: 17px
 }
 
 .footer-menu-contact {
-    margin-top: 17px;
-}
-
-.footer-phone {
-    margin-bottom: 5px;
+    display: flex;
+    gap: 40px;
+    margin-top: 17px
 }
 
 .footer-menu-title {
@@ -784,26 +777,23 @@ html {
     font-size: 18px;
     line-height: 26px;
     color: #282739;
-    min-width: 130px;
+    min-width: 130px
 }
 
 .column-list {
     columns: 8rem auto;
-    width: 300px;
+    width: 300px
 }
 
 .footer-span {
-    margin-right: 0 !important;
-}
-
-.social-group {
-    display: flex;
-    gap: 10px;
+    margin-right: 0 !important
 }
 
 .footer-top {
     justify-content: center;
     margin-bottom: 50px;
+    display: flex;
+    gap: 125px
 }
 
 .footer-menu-link {
@@ -811,40 +801,27 @@ html {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #5D6C7B;
+    color: #5d6c7b
 }
 
 .footer-menu-item {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .footer-native {
     padding-top: 46px;
-}
-
-.footer-top {
-    display: flex;
-    gap: 125px;
-}
-
-.footer-native {
-    background: #f4f7fb;
+    background: #f4f7fb
 }
 
 .form-main {
     max-width: 645px;
-    margin-left: 135px;
-}
-
-.scooter-image {
-    position: absolute;
+    margin-left: 135px
 }
 
 .test-drive-header {
     display: flex;
-    margin-top: 41px;
     max-width: 1380px;
-    height: 100%;
+    height: 100%
 }
 
 .image-scale {
@@ -852,65 +829,52 @@ html {
     width: 100%
 }
 
-.advantage-wrapper {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .second-image {
     right: unset;
-    left: 30px;
+    left: 30px
 }
 
 .second-wrapper {
-    justify-content: flex-end;
-}
-
-.relative {
-    position: relative;
+    justify-content: flex-end
 }
 
 .relative:nth-child(2) {
-    margin-top: 125px;
+    margin-top: 125px
 }
 
 .advantage-content {
     max-width: 645px;
-    margin-top: 29px;
+    margin-top: 29px
 }
 
 .advantage-title {
-    margin-bottom: 28px;
+    margin-bottom: 28px
 }
 
 .advantage-text {
     margin-bottom: 17px;
+    font-weight: 500 !important
 }
 
 .advantage-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 14px
 }
 
 .advantage-list-item {
     display: flex;
     align-items: center;
-    color: #282739;
+    color: #282739
 }
-
-.advantage-text {
-    font-weight: 500 !important;
-}
-
 
 .title {
-    letter-spacing: -0.7px;
+    letter-spacing: -.7px
 }
 
 .at-alt {
-    letter-spacing: -0.4px;
+    letter-spacing: -.4px
 }
 
 .scooter-image {
@@ -919,79 +883,89 @@ html {
     right: 0;
     max-width: 515px;
     height: auto;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .image-border {
-    background: white;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 10px
 }
 
 .advantage {
-    margin-top: 66px;
+    margin-top: 66px
 }
 
 .section {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 1440px
 }
 
 .header-button {
-    background: white !important;
+    background: #fff !important;
     color: #6f73ee !important;
-    padding: 19px 40.5px !important;
+    padding: 19px 40.5px !important
+}
+
+.text,
+.title {
+    font-style: normal;
+    color: #282739
 }
 
 .hc-wrapper {
     margin-top: 56px !important;
     margin-bottom: 56px !important;
-    margin-left: 136px !important;
+    margin-left: 136px !important
 }
 
 .td-header-title {
     max-width: 650px;
-    letter-spacing: -0.7px;
+    letter-spacing: -.7px
 }
 
 .td-header-content {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .model-link-wrapper {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px
 }
 
 .info {
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 19px
 }
 
 .container-native {
     position: relative;
     max-width: 1580px;
-    margin: auto;
+    margin: auto
 }
 
 .con-alt {
     position: static !important;
-    margin: 0 150px;
-}
-
-.nav-span-text {
-    display: none;
+    margin: 0 150px
 }
 
 .menu-mobile {
-    display: none !important;
+    display: none !important
+}
+
+.footer-top,
+.info-item,
+.model-link,
+.search-menu,
+.social-list {
+    display: flex
 }
 
 .navbar {
     padding: 0 !important;
     margin-bottom: 0 !important;
-    border-bottom: 1px solid #EBEBF0;
+    border-bottom: 1px solid #ebebf0
 }
 
 .header-image-native {
@@ -1000,10 +974,10 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
-@supports (background-image: -webkit-image-set(url('/img/png/woman-riding.webp') 1x)) {
+@supports (background-image:-webkit-image-set(url('/img/png/woman-riding.webp') 1x)) {
     .header-image-native {
         background-image: -webkit-image-set(url('/img/png/woman-riding.webp') 1x)
     }
@@ -1012,85 +986,73 @@ html {
 .header-image-native::before {
     content: "";
     position: absolute;
-    background: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%);
+    background: linear-gradient(73.21deg, #6f73ee 17.37%, rgba(111, 115, 238, 0) 67.02%);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .title {
-    font-style: normal;
     font-weight: 600;
     font-size: 37px;
-    line-height: 51px;
-    text-transform: uppercase;
-    color: #282739;
+    line-height: 51px
 }
 
 .text {
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 29px;
-    color: #282739;
+    line-height: 29px
 }
 
 .info-item {
-    display: flex;
     gap: 8px;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
-
-.td-header-title,
-.td-header-text {
-    color: white;
-    margin-bottom: 7px;
+.td-header-text,
+.td-header-title {
+    color: #fff;
+    margin-bottom: 7px
 }
 
 .model-link {
     margin-bottom: 40px;
-}
-
-.model-link {
-    display: flex;
-    gap: 35px;
+    gap: 35px
 }
 
 .form-control {
-    border-radius: 7px;
-    border: 1.5px solid #E3E6ED;
+    border-radius: 7px
 }
 
 input.form-control:focus {
     box-shadow: none;
-    border: 1.5px solid #E3E6ED;
-    background-color: #F7F8FD;
-    letter-spacing: 1px;
+    border: 1.5px solid #e3e6ed;
+    background-color: #f7f8fd;
+    letter-spacing: 1px
 }
 
 .btn-primary {
-    background-color: #5878FF !important;
-    border-radius: 7px;
+    background-color: #5878ff !important;
+    border-radius: 7px
 }
 
 .btn-primary:focus {
-    box-shadow: none;
+    box-shadow: none
 }
 
 .nav-service-list {
     margin-top: 13px;
     margin-bottom: 12px;
     display: flex;
-    gap: 30px;
+    gap: 30px
 }
 
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
-    background-color: unset !important;
+    background-color: unset !important
 }
 
 .nav-phone {
@@ -1099,46 +1061,38 @@ input.form-control:focus {
     color: #282739;
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: -0.4px;
+    letter-spacing: -.4px
 }
 
 .social-list {
-    display: flex;
-    gap: 15px;
-}
-
-.social-item-link {
-    text-decoration: none;
-}
-
-.search-menu {
-    display: flex;
+    gap: 15px
 }
 
 .service-list-item {
     font-size: 14px;
-    color: #5d6c7b;
+    color: #5d6c7b
 }
 
 .icon {
-    width: 130%;
+    width: 130%
 }
 
-.header {
-    margin-top: 30px;
+.header,
+.test-drive-header {
+    margin-top: 30px
 }
 
-.span-text,
-.nav-span-text {
+.nav-span-text,
+.span-text {
     font-size: 32px;
     color: #282739;
     font-weight: 700;
     margin-right: 35px;
-    padding: 5px 0;
+    padding: 5px 0
 }
 
 .btn {
-    padding: 0.375rem 11px !important;
+    padding: .375rem 11px !important
 }
 
 .label-native {
@@ -1146,36 +1100,33 @@ input.form-control:focus {
     position: absolute;
     color: #5d6c7b;
     font-size: 16px;
-    margin: 14px 20px !important;
+    margin: 14px 20px !important
 }
 
 .button-native {
-    background: #6F73EE;
+    background: #6f73ee;
     font-size: 18px;
-    color: white;
+    color: #fff;
     padding: 15px 25px;
     border: 0;
     display: inline-block;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
-.footer-top {
-    display: flex;
+.a-last,
+.form-policy-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400
 }
 
 .catalog-button {
     display: flex;
     margin-right: 20px;
     align-items: center;
-    padding: 12px 0;
-    letter-spacing: 0.5px;
-    padding-left: 15px;
-    padding-right: 18px;
-}
-
-.test-drive-header {
-    margin-top: 30px;
+    padding: 12px 18px 12px 15px;
+    letter-spacing: .5px
 }
 
 .side-menu {
@@ -1184,47 +1135,44 @@ input.form-control:focus {
     align-items: center;
     gap: 25px;
     margin-left: 47px;
-    position: relative;
+    position: relative
 }
 
 .header-icon {
-    color: #282739;
+    color: #282739
 }
 
-.header-icon:nth-child(1),
+.header-icon:first-child,
 .header-icon:nth-child(2),
 .header-icon:nth-child(3) {
     display: flex;
     font-size: 16px;
     align-items: center;
     font-weight: 500;
-    gap: 10px;
+    gap: 10px
 }
 
 .input-group-native {
-    max-width: 603px !important;
+    max-width: 603px !important
 }
 
 .form-policy-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
     line-height: 14px;
-    color: #282739;
+    color: #282739
 }
 
 .form-button {
-    padding: 15px 25px;
+    padding: 15px 25px
 }
 
 .form-policy {
     display: flex;
-    max-width: 384px;
+    max-width: 384px
 }
 
 .form-control {
     height: 40px !important;
-    border: 2px solid #6f73ee;
+    border: 2px solid #6f73ee
 }
 
 .catalog-button:before {
@@ -1232,39 +1180,33 @@ input.form-control:focus {
     background-image: url('/img/icon/threelines.svg');
     width: 12.8px;
     height: 12px;
-    margin-right: 13px;
+    margin-right: 13px
 }
 
 .footer-abyss {
     padding-top: 17.3px;
     padding-bottom: 18.3px;
-}
-
-.footer-abyss {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 
 .span-group {
     display: flex;
-    gap: 44px;
+    gap: 44px
 }
 
 .a-last {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
     line-height: 17px;
-    color: #5D6C7B;
+    color: #5d6c7b;
     max-width: 167px;
-    word-break: break-all;
+    word-break: break-all
 }
 
 .payment-group {
     display: flex;
     gap: 3.9px;
-    align-items: center;
+    align-items: center
 }
 
 .online-chat {
@@ -1272,197 +1214,162 @@ input.form-control:focus {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #282739;
+    color: #282739
 }
 
 @media(max-width:1700px) {
     .container-native {
-        max-width: 80%;
+        max-width: 80%
     }
 
     @media (max-width:1440px) {
+
+        .adress,
+        .day-time,
+        .form-policy-text,
+        .nav-phone,
+        .price-one,
+        .service-list-item,
         html {
-            font-size: 12px;
+            font-size: 12px
         }
 
         .form-policy {
-            max-width: 379px;
+            max-width: 379px
         }
 
         .form-main {
-            width: 49%;
+            width: 49%
         }
 
         .form-section {
-            max-width: 96%;
+            max-width: 96%
         }
 
-        .form-policy-text {
-            font-size: 12px;
-
+        .form-title,
+        .title {
+            font-size: 35px
         }
 
-        .form-title {
-            font-size: 35px;
-        }
-
+        .button-native,
         .form-text {
-            font-size: 16px;
-
+            font-size: 16px
         }
 
         .title-models {
             max-width: 732px;
-            margin: 0 190px;
+            margin: 0 190px
         }
 
-        .advantage-list-item {
-            font-size: 18px;
+        .advantage-list-item,
+        .card-content-title {
+            font-size: 18px
         }
 
         .button-card {
-            font-size: 12px !important;
+            font-size: 12px !important
         }
 
-        .price-two {
-            font-size: 20px;
+        .price-two,
+        .text {
+            font-size: 20px
         }
 
-        .price-one {
-            font-size: 12px;
-        }
-
-        .card-info {
-            font-size: 14px;
-        }
-
-        .card-content-title {
-            font-size: 18px;
+        .card-info,
+        .header-icon:nth-child(3),
+        .label-native,
+        .model-link-item {
+            font-size: 14px
         }
 
         .scooter-image {
             right: 30px;
-            width: 35.8%;
+            width: 35.8%
         }
 
         .advantage-content {
-            width: 62%;
+            width: 62%
         }
 
         .test-drive-header {
-            width: 96%;
+            width: 96%
         }
 
         .container-native {
-            max-width: 77%;
+            max-width: 77%
         }
 
         .con-ad-alt {
-            max-width: 78%;
+            max-width: 78%
         }
 
         .td-header-title {
-            max-width: 612px;
+            max-width: 612px
         }
 
         .model-link {
-            max-width: 438px;
+            max-width: 438px
         }
 
-        .adress,
-        .day-time {
-            font-size: 12px;
-        }
-
-        .model-link-item {
-            font-size: 14px;
-        }
-
-        .text {
-            font-size: 20px;
-        }
-
-        .title {
-            font-size: 35px;
-        }
-
-        .service-list-item,
-        .nav-phone {
-            font-size: 12px;
-        }
-
-        .header-icon:nth-child(3) {
-            font-size: 14px;
-        }
-
-        .button-native {
-            font-size: 16px;
-        }
-
-        .span-text,
-        .nav-span-text {
-            font-size: 30px;
-        }
-
-        .label-native {
-            font-size: 14px;
+        .nav-span-text,
+        .span-text {
+            font-size: 30px
         }
 
         .icon {
-            width: 100%;
+            width: 100%
         }
 
         .social-list {
-            gap: 8.5px;
+            gap: 8.5px
         }
 
         @media(max-width:1292px) {
-
             .woman-image {
-                right: 100px !important;
+                right: 100px !important
             }
 
             @media(max-width:1200px) {
                 .title-models {
-                    margin: 0 100px;
+                    margin: 0 100px
                 }
 
                 .input-group-email {
-                    flex-direction: row !important;
+                    flex-direction: row !important
                 }
 
                 .footer-top {
-                    gap: 70px;
+                    gap: 70px
                 }
 
                 .fb-wrapper {
-                    gap: 80px;
+                    gap: 80px
                 }
 
                 .form-email {
-                    min-width: 263px;
+                    min-width: 263px
                 }
 
                 .discount-wrapper {
-                    justify-content: flex-start;
+                    justify-content: flex-start
                 }
 
                 .input-group-native {
                     max-width: 263px !important;
-                    flex-direction: column;
+                    flex-direction: column
                 }
 
                 .woman-image {
-                    right: 90px !important;
+                    right: 90px !important
                 }
 
                 .cards {
-                    flex-wrap: wrap;
+                    flex-wrap: wrap
                 }
 
                 @media(max-width:1120px) {
                     .form-email {
-                        min-width: unset;
+                        min-width: unset
                     }
                 }
             }
@@ -1471,65 +1378,64 @@ input.form-control:focus {
 }
 
 @media(max-width:991.98px) {
+
+    .discount-title,
+    .form-title {
+        text-align: center
+    }
+
+    .adress,
+    .day-time,
+    .form-policy-text,
     html {
-        font-size: 10px;
+        font-size: 10px
     }
 
     .footer-span {
         display: block !important;
         margin: 0 !important;
-        max-width: 116px;
+        max-width: 116px
+    }
+
+    .footer-menu-wrapper:nth-child(3),
+    .form-main,
+    .not-button {
+        margin-left: unset
     }
 
     .footer-abyss {
         align-items: flex-start;
         flex-direction: column;
-        gap: 15px;
+        gap: 15px
     }
 
     .link-group-native,
     .social-group {
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
 
-    .footer-bottom,
-    .fb-wrapper {
+    .fb-wrapper,
+    .footer-bottom {
         flex-direction: column;
-        gap: 37.2px;
+        gap: 37.2px
     }
 
     .footer-top {
         gap: 25px;
-        flex-direction: column;
+        flex-direction: column
     }
 
     .footer-menu-contact {
         flex-direction: column;
-        gap: 25px;
-    }
-
-    .not-button {
-        margin-left: unset;
+        gap: 25px
     }
 
     .column-list {
-        columns: 1 auto;
-    }
-
-    .footer-menu-wrapper:nth-child(3) {
-        margin-left: unset;
-    }
-
-    .form-policy-text {
-        font-size: 10px;
+        columns: 1 auto
     }
 
     .discount-form {
-        height: 120px;
-    }
-
-    .discount-title {
-        text-align: center;
+        height: 120px
     }
 
     .form-email {
@@ -1538,89 +1444,83 @@ input.form-control:focus {
 
     .discount-wrapper {
         flex-direction: column !important;
-        gap: 15px;
+        gap: 15px
     }
 
     .input-group-email {
-        flex-direction: column !important;
+        flex-direction: column !important
     }
 
     .text-beta {
-        width: 235px;
+        width: 235px
     }
 
     .modal-form-main {
-        align-items: center;
+        align-items: center
     }
 
     .modal-wrapper {
-        width: 345px;
+        width: 345px
     }
 
     .application-wrapper {
-        width: 345px !important;
+        width: 345px !important
     }
 
-    .riding-image {
-        display: none;
+    .riding-image,
+    .side-menu,
+    .span-text {
+        display: none
     }
 
     .woman-image {
-        display: none !important;
+        display: none !important
     }
 
+    .advantage-wrapper,
     .form-wrapper {
-        justify-content: center;
+        justify-content: center
     }
 
     .form-main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: unset;
-        width: 70%;
+        width: 70%
     }
 
     .form-policy {
-        max-width: 263px !important;
+        max-width: 263px !important
     }
 
     .form-title {
-        text-align: center;
         margin-bottom: 15px;
+        font-size: 32px
     }
 
     .title-models {
-        margin: 0 20px;
+        margin: 0 20px
     }
 
-    .form-title {
-        font-size: 32px;
-    }
-
+    .button-native,
     .form-text {
-        font-size: 14px;
-
-    }
-
-    .span-text {
-        display: none;
+        font-size: 14px
     }
 
     .modal-span {
-        display: block !important;
+        display: block !important
     }
 
     .advantage {
-        margin-top: 50px;
+        margin-top: 50px
     }
 
     .relative:nth-child(2) {
-        margin-top: 35px;
+        margin-top: 35px
     }
 
     .title {
-        font-size: 33px;
+        font-size: 33px
     }
 
     .scooter-image {
@@ -1628,336 +1528,296 @@ input.form-control:focus {
         position: relative;
         width: 80%;
         right: -175px;
-        left: 175px;
+        left: 175px
     }
 
     .advantage-content {
-        width: 100%;
-    }
-
-    .advantage-wrapper {
-        justify-content: center;
+        width: 100%
     }
 
     .text {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .advantage-list-item {
-        font-size: 16px;
+        font-size: 16px
     }
 
+    .header-icon:nth-child(3),
     .model-link-item {
-        font-size: 12px;
-    }
-
-    .day-time,
-    .adress {
-        font-size: 10px;
+        font-size: 12px
     }
 
     .con-alt {
-        margin: auto;
+        margin: auto
     }
 
     .menu-mobile {
         display: flex !important;
         justify-content: flex-end;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
     .header-image-native {
-        background-image: unset;
+        background-image: unset
     }
 
     .model-link {
-        max-width: 620px;
+        max-width: 620px
     }
 
     .header-image-native::before {
-        background: #6F73EF;
+        background: #6f73ef
     }
 
     .menu-icon {
-        width: 15px;
+        width: 15px
     }
 
-    .nav-phone {
-        right: unset;
-    }
-
-    .side-menu {
-        display: none;
-    }
-
+    .nav-service-list,
     .nav-span-text {
-        display: block;
+        display: block
     }
 
     .container-native {
-        max-width: 77%;
+        max-width: 77%
     }
 
-
-    .header-icon:nth-child(1),
+    .header-icon:first-child,
     .header-icon:nth-child(2) {
         display: flex;
         font-size: 12px;
-        align-items: center;
+        align-items: center
     }
 
     .menu-mobile {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     .con-alt {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between
     }
 
     .nav-phone {
-        display: contents;
+        right: unset;
+        display: contents
     }
 
+    .nav-phone,
     .service-list-item,
-    .social-list,
-    .nav-phone {
+    .social-list {
         font-size: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
-    .header-icon:nth-child(3) {
-        font-size: 12px;
-    }
-
-    .button-native {
-        font-size: 14px;
-    }
-
-    .span-text,
-    .nav-span-text {
+    .nav-span-text,
+    .span-text {
         font-size: 28px;
-        margin: auto;
+        margin: auto
     }
 
-    .navbar-toggler:focus,
+    .navbar-toggler-icon:focus,
     .navbar-toggler:active,
-    .navbar-toggler-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
-
-    .nav-service-list {
-        display: block;
+    .navbar-toggler:focus {
+        outline: 0;
+        box-shadow: none
     }
 
     .label-native {
         font-size: 12px;
-        margin: 13px 20px;
+        margin: 13px 20px
     }
 
     @media(max-width:871.98px) {
-
         .hc-wrapper {
-            margin-left: 56px !important;
+            margin-left: 56px !important
         }
 
         .scooter-image {
             right: -125px;
-            left: 125px;
+            left: 125px
         }
 
         .footer-abyss {
-            width: 400px;
+            width: 400px
         }
 
         .payment-group {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
         .social-list-alt {
             margin-left: 0;
-            margin-top: 15px;
+            margin-top: 15px
         }
 
         @media(max-width:768px) {
-
             .scooter-image {
                 right: -90px;
-                left: 90px;
+                left: 90px
             }
 
             @media(max-width:576px) {
+
+                .form-title,
+                .title-models {
+                    line-height: 33px !important
+                }
+
                 .container-native {
-                    max-width: 90%;
+                    max-width: 90%
                 }
 
                 .form-section {
-                    margin-top: 50px !important;
+                    margin-top: 50px !important
                 }
 
                 .discount-section {
-                    margin-top: 43px;
+                    margin-top: 43px
                 }
 
                 .form-policy-text {
-                    font-size: 10px;
+                    font-size: 10px
                 }
 
                 .discount-title {
-                    max-width: 320px;
+                    max-width: 320px
                 }
 
                 .bg-grey {
                     padding-top: 48px;
-                    padding-bottom: 48px;
+                    padding-bottom: 48px
                 }
 
                 .form-title {
-                    font-size: 20px !important;
-                    line-height: 33px !important;
+                    font-size: 20px !important
                 }
 
-                .form-text {
-                    font-size: 12px;
+                .button-native,
+                .form-text,
+                .model-link-item {
+                    font-size: 12px
                 }
 
                 .title-models {
-                    margin: 0px 10px;
-                    font-size: 20px !important;
-                    line-height: 33px !important;
+                    margin: 0 10px;
+                    font-size: 20px !important
                 }
 
                 .cards {
-                    margin-top: 25px;
+                    margin-top: 25px
                 }
 
                 .models {
-                    margin-top: 50px;
+                    margin-top: 50px
                 }
 
                 .advantage-list-item {
                     gap: 5px;
+                    font-size: 12px
                 }
 
                 .check-icon {
-                    width: 18px;
+                    width: 18px
                 }
 
                 .crutch-bold {
-                    margin-right: -2px;
+                    margin-right: -2px
                 }
 
                 .hc-wrapper {
-                    margin-left: 36px !important;
+                    margin-left: 36px !important
                 }
 
                 .scooter-image {
                     right: -60px;
-                    left: 60px;
+                    left: 60px
                 }
 
                 .model-link {
                     max-width: 465px;
+                    gap: 20px;
+                    flex-wrap: wrap
                 }
 
                 .td-header-content {
-                    margin-bottom: 20px;
-                }
-
-                .advantage-list-item {
-                    font-size: 12px;
+                    margin-bottom: 20px
                 }
 
                 .title {
                     font-size: 23px;
-                    line-height: 41px;
+                    line-height: 41px
                 }
 
                 .advantage-content {
-                    width: 90%;
+                    width: 90%
                 }
 
                 .advantage-title {
                     font-size: 20px;
                     line-height: 33px;
-                    margin-bottom: 10px;
+                    margin-bottom: 10px
                 }
 
-
                 .text {
-                    font-size: 14px;
+                    font-size: 14px
                 }
 
                 .item {
-                    font-size: 9px;
-                }
-
-                .button-native {
-                    font-size: 12px;
-                }
-
-                .model-link {
-                    gap: 20px;
-                    flex-wrap: wrap;
+                    font-size: 9px
                 }
 
                 .ml-image {
-                    width: 30px;
-                }
-
-                .model-link-item {
-                    font-size: 12px;
+                    width: 30px
                 }
 
                 .model-link-wrapper {
-                    gap: 10px;
+                    gap: 10px
                 }
             }
 
             @media(max-width:486px) {
                 .scooter-image {
                     right: -38px;
-                    left: 38px;
+                    left: 38px
                 }
 
                 .form-text {
                     line-height: 20px;
-                    text-align: center;
+                    text-align: center
                 }
             }
 
             @media(max-width:357px) {
                 .modal-wrapper {
                     width: 295px;
-                    padding: 0 16px;
-                    padding-top: 40px;
-                    padding-bottom: 37px;
+                    padding: 40px 16px 37px
                 }
 
                 .application-wrapper {
-                    width: 295px !important;
+                    width: 295px !important
                 }
             }
 
             @media(max-width:340px) {
                 .label-native {
-                    margin: 14px 4px !important;
+                    margin: 14px 4px !important
                 }
 
                 .phone-label {
-                    font-size: 14px;
+                    font-size: 14px
                 }
 
                 .form-phone {
-                    min-width: 228px;
+                    min-width: 228px
                 }
 
                 .scooter-image {
                     right: -34px;
-                    left: 34px;
+                    left: 34px
                 }
             }
         }
