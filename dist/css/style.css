@@ -1179,10 +1179,12 @@ input.form-control:focus {
 }
 
 .side-menu {
+    top: -5px;
     display: flex;
     align-items: center;
     gap: 25px;
     margin-left: 47px;
+    position: relative;
 }
 
 .header-icon {
@@ -1255,6 +1257,8 @@ input.form-control:focus {
     font-size: 12px;
     line-height: 17px;
     color: #5D6C7B;
+    max-width: 167px;
+    word-break: break-all;
 }
 
 .payment-group {
