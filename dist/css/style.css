@@ -115,8 +115,19 @@ html {
 }
 
 .footer-bottom {
-    padding-top: 36px;
-    padding-bottom: 35px;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+
+.social-list-alt {
+    display: flex;
+    gap: 14px;
+    margin-left: 32px;
+}
+
+.social-item-link-alt {
+    width: 16px;
+    height: 16px;
 }
 
 .form-email {
@@ -792,7 +803,7 @@ html {
 
 .footer-top {
     justify-content: center;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .footer-menu-link {
@@ -1222,6 +1233,44 @@ input.form-control:focus {
     margin-right: 13px;
 }
 
+.footer-abyss {
+    padding-top: 17.3px;
+    padding-bottom: 18.3px;
+}
+
+.footer-abyss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span-group {
+    display: flex;
+    gap: 44px;
+}
+
+.a-last {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+}
+
+.payment-group {
+    display: flex;
+    gap: 3.9px;
+    align-items: center;
+}
+
+.online-chat {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+}
+
 @media(max-width:1700px) {
     .container-native {
         max-width: 80%;
@@ -1426,6 +1475,12 @@ input.form-control:focus {
         display: block !important;
         margin: 0 !important;
         max-width: 116px;
+    }
+
+    .footer-abyss {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .link-group-native,
@@ -1708,6 +1763,19 @@ input.form-control:focus {
         .scooter-image {
             right: -125px;
             left: 125px;
+        }
+
+        .footer-abyss {
+            width: 400px;
+        }
+
+        .payment-group {
+            flex-wrap: wrap;
+        }
+
+        .social-list-alt {
+            margin-left: 0;
+            margin-top: 15px;
         }
 
         @media(max-width:768px) {
