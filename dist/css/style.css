@@ -485,6 +485,14 @@ html {
     gap: 25px
 }
 
+.something {
+    position: relative;
+}
+
+.top-info {
+    z-index: 1;
+}
+
 .price-one {
     font-weight: 500;
     font-size: 12px;
