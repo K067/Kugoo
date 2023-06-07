@@ -45,6 +45,7 @@ html {
 }
 
 .form-email,
+.button-card,
 .form-phone:focus {
     outline: 0
 }
