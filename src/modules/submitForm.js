@@ -5,7 +5,7 @@ import formSending from "./formSending";
 
 const submitForm = () => {
     const statusBlock = document.createElement('div');
-    const invalidText = 'Форма заполнена неверно';
+    const invalidText = 'invalid fields';
     const form = document.querySelectorAll('.global');
     const emailButton = document.querySelector('.email-button');
 
@@ -27,7 +27,7 @@ const submitForm = () => {
                 });
 
             }).catch(() => {
-                alert('ошибка');
+                alert('error');
             });
         } else {
             document.querySelector('.input-group-email').append(statusBlock);
@@ -46,13 +46,13 @@ const submitForm = () => {
             .addField('input[name=user_phone]', [
                 {
                     rule: 'required',
-                    errorMessage: 'Укажите телефон',
+                    errorMessage: 'Phone',
                 },
             ])
             .addField('input[name=user_check]', [
                 {
                     rule: 'required',
-                    errorMessage: 'Согласись!'
+                    errorMessage: 'check it'
                 },
             ])
             .onSuccess((event) => {
@@ -71,7 +71,7 @@ const submitForm = () => {
                         });
 
                     }).catch(() => {
-                        alert('ошибка');
+                        alert('error');
                     });
                 } else {
                     const formPolicy = document.querySelector('.form-policy');
