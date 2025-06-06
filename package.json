@@ -1,14 +1,14 @@
 {
-  "name": "kugoo",
+  "name": "Kemi",
   "version": "1.0.0",
-  "description": "diploma",
+  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
     "start": "webpack serve --mode=development --open"
   },
-  "author": "aismeg",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.78.0",
